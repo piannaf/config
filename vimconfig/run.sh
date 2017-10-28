@@ -21,6 +21,13 @@ set_vimrc () {
 	cmd ln -hfs $SOURCE $TARGET
 }
 
+set_dotvim () {
+	SOURCE=$(find $(pwd) -name .vim)
+	TARGET=$HOME/.vim
+
+	cmd ln -hfs $SOURCE $TARGET
+}
+
 ###############################################################################
 # MAIN
 ###############################################################################
@@ -29,3 +36,4 @@ set_vimrc () {
 # (over)write links to vim config
 #
 set_vimrc
+set_dotvim
