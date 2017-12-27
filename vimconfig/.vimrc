@@ -1,5 +1,6 @@
 set bg=dark
 syntax on
+set colorcolumn=80
 
 set encoding=utf-8	" The encoding displayed
 set fileencoding=utf-8	" The encoding written to file
